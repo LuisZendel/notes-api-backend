@@ -4,6 +4,6 @@ Content-Type:application/json
 Accept:application/json
 
 {
-    "content": "Prueba para la sexta",
+    "content": "otra prueba de nota",
     "important": false
 }

@@ -62,7 +62,7 @@ app.post('/api/notes', (req,res) => {
     console.log(note);
     console.log(content);
     console.log(important);
-    if(content === 'undefined' || content === ''){
+    if(content === 'undefined' || content === ''){ 
         return res.status(400).json(
             { error:'note.content is missing'}
         );
@@ -80,7 +80,9 @@ app.post('/api/notes', (req,res) => {
 });
 app.put('/api/notes',(req,res) => {
     const body = req.body;
+    console.log('ejecucion de put');
     console.log(body);
+    console.log('Ya se imprimio el body');
     res.send(200);
 });
 //Buena practica para validar las direcciones
