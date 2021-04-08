@@ -1,4 +1,3 @@
-
 const express = require('express');
 const logger = require('./logger');
 const endpoint = require('./unknownEndpoint');
@@ -87,8 +86,11 @@ app.put('/api/notes',(req,res) => {
 });
 //Buena practica para validar las direcciones
 app.use(endpoint);
-app.listen(3001, () => {
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
     console.log('Server running');
 });
+console.log(PORT);
 
   
